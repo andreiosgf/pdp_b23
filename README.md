@@ -1,2 +1,2 @@
 # pdp_b23
-Paradigmas de Programación
+Ejemplos del curso de Paradigmas de Programación
