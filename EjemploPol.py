@@ -1,0 +1,24 @@
+import abc
+
+class Shape(metaclass=abc.ABCMeta):
+    @abc.abstractmethod
+    def area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius ** 2
+
+# This will raise a TypeError because you cannot instantiate an abstract class
+shape = Shape()
